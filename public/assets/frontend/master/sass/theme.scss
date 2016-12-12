@@ -1,0 +1,33 @@
+/*
+Name: 			theme.css
+Written by: 	Okler Themes - (http://www.okler.net)
+Version: 		@@version
+*/
+
+// COMMON IMPORTS
+@import "config/_imports";
+
+// BASE
+@import "base/_base";
+@import "base/_header";
+@import "base/_page-header";
+
+// HELPERS
+@import "config/_helpers";
+
+// GUI
+@import "gui/_parallax";
+@import "gui/_sections";
+@import "gui/_sidebar";
+@import "gui/_sliders";
+
+// PARTIALS
+@import "partials/_home";
+@import "partials/_page-not-found";
+
+// FOOTER
+@import "base/_footer";
+
+// LAYOUTS
+@import "layouts/_dark";
+@import "layouts/_boxed";
