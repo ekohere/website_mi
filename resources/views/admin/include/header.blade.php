@@ -1,5 +1,5 @@
 <!-- start: header -->
-            <header class="header">
+<header class="header">
                 <div class="logo-container">
                     <a href="../" class="logo">
                         <img src="{{asset('assets/admin/images/logo.png')}}" height="35" alt="Porto Admin" />
@@ -217,4 +217,4 @@
                 </div>
                 <!-- end: search & user box -->
             </header>
-            <!-- end: header -->
+<!-- end: header -->
