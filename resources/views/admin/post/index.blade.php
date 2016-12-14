@@ -4,11 +4,11 @@
         <div class="row">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h2 class="panel-title">%%crudNameCap%%</h2>
+                        <h2 class="panel-title">Post</h2>
                     </div>
                     <div class="panel-body">
 
-                        <a href="{{ url('/%%routeGroup%%%%viewName%%/create') }}" class="mb-xs mt-xs mr-xs btn btn-success" title="Add New %%modelName%%"><i class="fa fa-plus"></i> Tambah</a>
+                        <a href="{{ url('/admin/post/create') }}" class="mb-xs mt-xs mr-xs btn btn-success" title="Add New post"><i class="fa fa-plus"></i> Tambah</a>
 
                         <form id="form_filter" >
                                     <div class="row form-inline form-horizontal">
@@ -33,26 +33,26 @@
                             <table class="table table-no-more table-bordered table-striped mb-none">
                                 <thead>
                                     <tr>
-                                        <th>ID</th>%%formHeadingHtml%%<th>Actions</th>
+                                        <th>ID</th><th> Title </th><th> Content </th><th> User Id </th><th> Category Id </th><th> Types Id </th><th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($%%crudName%% as $item)
+                                @foreach($post as $item)
                                     <tr>
                                         <td>{{ $item->id }}</td>
-                                        %%formBodyHtml%%
+                                        <td>{{ $item->title }}</td><td>{{ $item->content }}</td><td>{{ $item->user_id }}</td><td>{{ $item->category_id }}</td><td>{{ $item->types_id }}</td>
                                         <td>
-                                            <a href="{{ url('/%%routeGroup%%%%viewName%%/' . $item->%%primaryKey%%) }}" class="btn btn-success btn-xs" title="View %%modelName%%"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"/></a>
-                                            <a href="{{ url('/%%routeGroup%%%%viewName%%/' . $item->%%primaryKey%% . '/edit') }}" class="btn btn-primary btn-xs" title="Edit %%modelName%%"><span class="glyphicon glyphicon-pencil" aria-hidden="true"/></a>
+                                            <a href="{{ url('/admin/post/' . $item->id) }}" class="btn btn-success btn-xs" title="View post"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"/></a>
+                                            <a href="{{ url('/admin/post/' . $item->id . '/edit') }}" class="btn btn-primary btn-xs" title="Edit post"><span class="glyphicon glyphicon-pencil" aria-hidden="true"/></a>
                                             {!! Form::open([
                                                 'method'=>'DELETE',
-                                                'url' => ['/%%routeGroup%%%%viewName%%', $item->%%primaryKey%%],
+                                                'url' => ['/admin/post', $item->id],
                                                 'style' => 'display:inline'
                                             ]) !!}
-                                                {!! Form::button('<span class="glyphicon glyphicon-trash" aria-hidden="true" title="Delete %%modelName%%" />', array(
+                                                {!! Form::button('<span class="glyphicon glyphicon-trash" aria-hidden="true" title="Delete post" />', array(
                                                         'type' => 'submit',
                                                         'class' => 'btn btn-danger btn-xs',
-                                                        'title' => 'Delete %%modelName%%',
+                                                        'title' => 'Delete post',
                                                         'onclick'=>'return confirm("Confirm delete?")'
                                                 )) !!}
                                             {!! Form::close() !!}
@@ -61,7 +61,7 @@
                                 @endforeach
                                 </tbody>
                             </table>
-                            <div class="pagination-wrapper"> {!! $%%crudName%%->render() !!} </div>
+                            <div class="pagination-wrapper"> {!! $post->render() !!} </div>
                         </div>
 
                     </div>

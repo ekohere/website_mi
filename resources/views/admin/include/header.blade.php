@@ -88,7 +88,7 @@
                                         <li>
                                             <a href="#" class="clearfix">
                                                 <figure class="image">
-                                                    <img src="assets/images/!sample-user.jpg" alt="Joseph Doe Junior" class="img-circle" />
+                                                    <img src="{{asset('assets/admin/images/!sample-user.jpg')}}" alt="Joseph Doe Junior" class="img-circle" />
                                                 </figure>
                                                 <span class="title">Joseph Doe</span>
                                                 <span class="message">Lorem ipsum dolor sit.</span>
@@ -189,7 +189,7 @@
                     <div id="userbox" class="userbox">
                         <a href="#" data-toggle="dropdown">
                             <figure class="profile-picture">
-                                <img src="assets/images/!logged-user.jpg" alt="Joseph Doe" class="img-circle" data-lock-picture="assets/images/!logged-user.jpg" />
+                                <img src="{{asset('assets/admin/images/!logged-user.jpg')}}" alt="Joseph Doe" class="img-circle" data-lock-picture="assets/images/!logged-user.jpg" />
                             </figure>
                             <div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
                                 <span class="name">John Doe Junior</span>

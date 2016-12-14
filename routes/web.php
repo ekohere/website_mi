@@ -21,3 +21,5 @@ Route::get('/tampiladmin', 'BladeController@index');
 //frontend
 Route::get('/kiri', 'BladeController@tampil_kiri');
 Route::get('/kanan', 'BladeController@tampil_kanan');
+
+Route::Resource('admin/post','Admin\PostController');

@@ -4,7 +4,7 @@
         <div class="row">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h2>Create New %%modelName%%</h2>
+                        <h2 class="panel-title">Edit post {{ $post->id }}</h2>
                     </div>
                     <div class="panel-body">
 
@@ -16,9 +16,14 @@
                             </ul>
                         @endif
 
-                        {!! Form::open(['url' => '/%%routeGroup%%%%viewName%%', 'class' => 'form-horizontal', 'files' => true]) !!}
+                        {!! Form::model($post, [
+                            'method' => 'PATCH',
+                            'url' => ['/admin/post', $post->id],
+                            'class' => 'form-horizontal',
+                            'files' => true
+                        ]) !!}
 
-                        @include ('%%viewTemplateDir%%.form')
+                        @include ('admin.post.form', ['submitButtonText' => 'Update'])
 
                         {!! Form::close() !!}
 
