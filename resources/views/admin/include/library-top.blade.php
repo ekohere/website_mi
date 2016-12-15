@@ -18,7 +18,7 @@
 
 		<link rel="stylesheet" href="{{asset('assets/admin/vendor/font-awesome/css/font-awesome.min.css')}}" />
 		<link rel="stylesheet" href="{{asset('assets/admin/vendor/magnific-popup/magnific-popup.min.css')}}" />
-		<link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css')}}" />
+		<link rel="stylesheet" href="{{asset('assets/admin/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css')}}" />
 
 		<!-- Specific Page Vendor CSS -->
 		<link rel="stylesheet" href="{{asset('assets/admin/vendor/jquery-ui/jquery-ui.min.css')}}" />
@@ -33,7 +33,7 @@
 		<link rel="stylesheet" href="{{asset('assets/admin/stylesheets/skins/default.min.css')}}" />
 
 		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="{{asset('assets/admin/stylesheets/theme-custom.min.css')}}">
+		<link rel="stylesheet" href="{{asset('assets/admin/stylesheets/theme-custom.css')}}">
 
 		<!-- Head Libs -->
 		<script src="{{asset('assets/admin/vendor/modernizr/modernizr.min.js')}}"></script>
