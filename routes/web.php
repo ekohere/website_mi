@@ -21,3 +21,8 @@ Route::get('/tampiladmin', 'BladeController@index');
 //frontend
 Route::get('/kiri', 'BladeController@tampil_kiri');
 Route::get('/kanan', 'BladeController@tampil_kanan');
+
+//admin.category
+Route::resource('admin/category','CategoryController');
+//admin.comment
+Route::resource('admin/comment', 'CommentController');
