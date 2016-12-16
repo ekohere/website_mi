@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 //admin
 Route::get('/tampiladmin', 'BladeController@index');
+Route::Resource('/admin/post', 'Admin\PostController');
+Route::Resource('/admin/user', 'Admin\UserController');
 
 //frontend
 Route::get('/kiri', 'BladeController@tampil_kiri');
