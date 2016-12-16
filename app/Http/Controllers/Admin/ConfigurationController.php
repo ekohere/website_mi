@@ -18,8 +18,8 @@ class ConfigurationController extends Controller
      */
     public function index(Request $request)
     {
-        $paginate = $request->pagination;
-        $configuration = Configuration::where('id', 'LIKE', '%'.(isset($request->search)?$request->search:'').'%')->paginate(isset($request->pagination)?$request->pagination:($paginate));
+        $configuration = Configuration::where('title', 'LIKE', '%'.(isset($request->search)?$request->search:'').'%')
+            ->paginate(isset($request->pagination)?$request->pagination:($request->pagination));
 
         return view('admin.configuration.index', compact('configuration'));
     }
