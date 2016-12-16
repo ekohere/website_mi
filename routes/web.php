@@ -23,3 +23,14 @@ Route::Resource('/admin/user', 'Admin\UserController');
 //frontend
 Route::get('/kiri', 'BladeController@tampil_kiri');
 Route::get('/kanan', 'BladeController@tampil_kanan');
+
+<<<<<<< HEAD
+//controller
+Route::resource('admin/configuration', 'Admin\ConfigurationController');
+Route::resource('admin/type', 'Admin\TypeController');
+=======
+//admin.category
+Route::resource('admin/category','CategoryController');
+//admin.comment
+Route::resource('admin/comment', 'CommentController');
+>>>>>>> b3a7c4fe6fa3d094ec858e70ed55cd400dbf5173
