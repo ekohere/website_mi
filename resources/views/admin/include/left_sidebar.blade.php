@@ -27,77 +27,28 @@
 						</a>
 						<ul class="nav nav-children">
 							<li>
-								<a href="layouts-default.html">
-									Default
-								</a>
-							</li>
-							<li class="nav-parent">
-								<a>
-									Boxed
-								</a>
-								<ul class="nav nav-children">
-									<li>
-										<a href="layouts-boxed.html">
-											Static Header
-										</a>
-									</li>
-									<li>
-										<a href="layouts-boxed-fixed-header.html">
-											Fixed Header
-										</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="layouts-dark.html">
-									Dark
+								<a href="{{url('/admin/configuration')}}">
+									Configuration
 								</a>
 							</li>
 							<li>
-								<a href="layouts-dark-header.html">
-									Dark Header
+								<a href="{{url('/admin/type')}}">
+									Type
 								</a>
 							</li>
 							<li>
-								<a href="layouts-light-sidebar.html">
-									Light Sidebar
+								<a href="{{url('/admin/post')}}">
+									Post
 								</a>
 							</li>
 							<li>
-								<a href="layouts-left-sidebar-collapsed.html">
-									Left Sidebar Collapsed
+								<a href="{{url('/admin/comment')}}">
+									Comment
 								</a>
 							</li>
 							<li>
-								<a href="layouts-left-sidebar-scroll.html">
-									Left Sidebar Scroll
-								</a>
-							</li>
-							<li class="nav-parent">
-								<a>
-									Left Sidebar Sizes
-								</a>
-								<ul class="nav nav-children">
-									<li>
-										<a href="layouts-sidebar-sizes-xs.html">
-											Left Sidebar XS
-										</a>
-									</li>
-									<li>
-										<a href="layouts-sidebar-sizes-sm.html">
-											Left Sidebar SM
-										</a>
-									</li>
-									<li>
-										<a href="layouts-sidebar-sizes-md.html">
-											Left Sidebar MD
-										</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="layouts-square-borders.html">
-									Square Borders
+								<a href="{{url('/admin/category')}}">
+									Category
 								</a>
 							</li>
 						</ul>
