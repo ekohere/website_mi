@@ -19,12 +19,9 @@ class UserController extends Controller
      */
     public function index(Request $request)
     {
-        //$paginate = $request->pagination;
-        //$search = $request->search;
-        $user = User::where('name','LIKE','%',(isset($request->search)?$request->search:'').'%')
-        ->orwhere('email','LIKE','%',(isset($request->search)?$request->search:'').'%')
-        ->orwhere('id','LIKE','%',(isset($request->search)?$request->search:'').'%')
-        ->paginate(isset($request->search)?$request->pagination:25);
+        $user = User::where('name', 'LIKE', '%'.(isset($request->search)?$request->search:'').'%')
+            ->orwhere('email', 'LIKE', '%'.(isset($request->search)?$request->search:'').'%')
+            ->paginate(isset($request->pagination)?$request->pagination:($request->pagination));
 
         return view('admin.user.index', compact('user'));
     }

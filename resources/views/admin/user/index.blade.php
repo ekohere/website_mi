@@ -14,7 +14,7 @@
                                     <div class="row form-inline form-horizontal">
                                         <div class="col-sm-12 col-md-6">
                                             <div class="col-md-2">
-                                                {!! Form::select('pagination', ['1'=>'1','2'=>'2','50'=>'50','100'=>'100','semua'=>'semua'], isset($_GET['pagination'])?$_GET['pagination']:25, ["onchange"=>"this.form.submit();",'class' => 'form-control mb-md']) !!}
+                                                {!! Form::select('pagination', ['10'=>'10','25'=>'25','50'=>'50','100'=>'100','semua'=>'semua'], isset($_GET['pagination'])?$_GET['pagination']:25, ["onchange"=>"this.form.submit();",'class' => 'form-control mb-md']) !!}
                                             </div>
                                             <div class="col-md-4">
                                                 <label class="control-label"> data per halaman</label>
@@ -33,14 +33,14 @@
                             <table class="table table-no-more table-bordered table-striped mb-none">
                                 <thead>
                                     <tr>
-                                        <th>ID</th><th> Name </th><th> Email </th><th> Password </th><th> Phone </th><th> Address </th><th> Photo </th><th>Actions</th>
+                                        <th>ID</th><th> Name </th><th> Email </th><th> Password </th><th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($user as $item)
                                     <tr>
                                         <td>{{ $item->id }}</td>
-                                        <td>{{ $item->name }}</td><td>{{ $item->email }}</td><td>{{ $item->password }}</td><td>{{ $item->phone }}</td><td>{{ $item->address }}</td><td>{{ $item->photo }}</td>
+                                        <td>{{ $item->name }}</td><td>{{ $item->email }}</td><td>{{ $item->password }}</td>
                                         <td>
                                             <a href="{{ url('/admin/user/' . $item->id) }}" class="btn btn-success btn-xs" title="View user"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"/></a>
                                             <a href="{{ url('/admin/user/' . $item->id . '/edit') }}" class="btn btn-primary btn-xs" title="Edit user"><span class="glyphicon glyphicon-pencil" aria-hidden="true"/></a>

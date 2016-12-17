@@ -19,28 +19,6 @@
         {!! $errors->first('password', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-<div class="form-group {{ $errors->has('phone') ? 'has-error' : ''}}">
-    {!! Form::label('phone', 'Phone', ['class' => 'col-md-4 control-label']) !!}
-    <div class="col-md-6">
-        {!! Form::text('phone', null, ['class' => 'form-control']) !!}
-        {!! $errors->first('phone', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
-<div class="form-group {{ $errors->has('address') ? 'has-error' : ''}}">
-    {!! Form::label('address', 'Address', ['class' => 'col-md-4 control-label']) !!}
-    <div class="col-md-6">
-        {!! Form::text('address', null, ['class' => 'form-control']) !!}
-        {!! $errors->first('address', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
-<div class="form-group {{ $errors->has('photo') ? 'has-error' : ''}}">
-    {!! Form::label('photo', 'Photo', ['class' => 'col-md-4 control-label']) !!}
-    <div class="col-md-6">
-        {!! Form::text('photo', null, ['class' => 'form-control']) !!}
-        {!! $errors->first('photo', '<p class="help-block">:message</p>') !!}
-    </div>
-</div>
-
 
 <div class="form-group">
     <div class="col-md-offset-4 col-md-4">
