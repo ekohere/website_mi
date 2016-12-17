@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Comment extends Model
 {
      protected $fillable = [
-        'content','like','name_guest','email_guest','comment_id','user_id'
+        'content','comment_id','user_id'
     ];
 
 
