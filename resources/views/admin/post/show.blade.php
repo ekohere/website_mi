@@ -28,7 +28,7 @@
                                     <tr>
                                         <th>ID</th><td>{{ $post->id }}</td>
                                     </tr>
-                                    <tr><th> Title </th><td> {{ $post->title }} </td></tr><tr><th> Content </th><td> {{ $post->content }} </td></tr><tr><th> Like </th><td> {{ $post->like }} </td></tr><tr><th> Dislike </th><td> {{ $post->dislike }} </td></tr>
+                                    <tr><th> Title </th><td> {{ $post->title }} </td></tr><tr><th> Content </th><td> {{ $post->content }} </td></tr>
                                 </tbody>
                             </table>
                         </div>

@@ -31,3 +31,7 @@ Route::resource('admin/type', 'Admin\TypeController');
 Route::resource('admin/category','CategoryController');
 //admin.comment
 Route::resource('admin/comment', 'CommentController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

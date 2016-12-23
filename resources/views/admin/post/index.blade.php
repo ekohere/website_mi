@@ -33,14 +33,14 @@
                             <table class="table table-no-more table-bordered table-striped mb-none">
                                 <thead>
                                     <tr>
-                                        <th>ID</th><th> Title </th><th> Content </th><th> Like </th><th> Dislike </th><th>Actions</th>
+                                        <th>ID</th><th> Title </th><th> Content </th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($post as $item)
                                     <tr>
                                         <td>{{ $item->id }}</td>
-                                        <td>{{ $item->title }}</td><td>{{ $item->content }}</td><td>{{ $item->like }}</td><td>{{ $item->dislike }}</td>
+                                        <td>{{ $item->title }}</td><td>{{ $item->content }}</td>
                                         <td>
                                             <a href="{{ url('/admin/post/' . $item->id) }}" class="btn btn-success btn-xs" title="View post"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"/></a>
                                             <a href="{{ url('/admin/post/' . $item->id . '/edit') }}" class="btn btn-primary btn-xs" title="Edit post"><span class="glyphicon glyphicon-pencil" aria-hidden="true"/></a>

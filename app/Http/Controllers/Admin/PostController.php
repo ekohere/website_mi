@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Category;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\Post;
+use App\Type;
 use Illuminate\Http\Request;
 use Session;
 
@@ -16,9 +18,11 @@ class PostController extends Controller
      *
      * @return \Illuminate\View\View
      */
-    public function index()
+    public function index(Request $request)
     {
-        $post = Post::paginate(25);
+        $post = Post::where('title', 'LIKE', '%'.(isset($request->search)?$request->search:'').'%')
+            ->orwhere('content', 'LIKE', '%'.(isset($request->search)?$request->search:'').'%')
+            ->paginate(isset($request->pagination)?$request->pagination:($request->pagination));
 
 
         return view('admin.post.index', compact('post'));
@@ -29,9 +33,12 @@ class PostController extends Controller
      *
      * @return \Illuminate\View\View
      */
-    public function create()
+    public function create(Request $request)
     {
-        return view('admin.post.create');
+        $category = Category::pluck('name','id');
+        $type = Type::pluck('name','id');
+
+        return view('admin.post.create',compact('category','type'));
     }
 
     /**
@@ -77,8 +84,10 @@ class PostController extends Controller
     public function edit($id)
     {
         $post = Post::findOrFail($id);
+        $category = Category::pluck('name','id');
+        $type = Type::pluck('name','id');
 
-        return view('admin.post.edit', compact('post'));
+        return view('admin.post.edit', compact('post','category','type'));
     }
 
     /**
