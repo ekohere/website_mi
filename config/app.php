@@ -185,7 +185,8 @@ return [
         //laravel collective
         Collective\Html\HtmlServiceProvider::class,
 
-
+        //ckeditor
+        Unisharp\Ckeditor\ServiceProvider::class,
     ],
 
     /*

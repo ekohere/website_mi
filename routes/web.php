@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 //admin
 Route::get('/tampiladmin', 'BladeController@index');
+Route::Resource('/admin/post', 'Admin\PostController');
+Route::Resource('/admin/user', 'Admin\UserController');
 
 //frontend
 Route::get('/kiri', 'BladeController@tampil_kiri');
@@ -29,8 +31,16 @@ Route::resource('admin/type', 'Admin\TypeController');
 Route::resource('admin/category','CategoryController');
 //admin.comment
 Route::resource('admin/comment', 'CommentController');
+
 //admin.role
 Route::resource('admin/role', 'RoleController');
 //admin.permission
 Route::resource('admin/permission', 'PermissionController');
-Route::resource('admin/role', 'RoleController');
+
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
