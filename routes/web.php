@@ -29,3 +29,8 @@ Route::resource('admin/type', 'Admin\TypeController');
 Route::resource('admin/category','CategoryController');
 //admin.comment
 Route::resource('admin/comment', 'CommentController');
+//admin.role
+Route::resource('admin/role', 'RoleController');
+//admin.permission
+Route::resource('admin/permission', 'PermissionController');
+Route::resource('admin/role', 'RoleController');
