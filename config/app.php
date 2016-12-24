@@ -187,6 +187,9 @@ return [
 
         //ckeditor
         Unisharp\Ckeditor\ServiceProvider::class,
+
+        //sluggable
+        Cviebrock\EloquentSluggable\ServiceProvider::class,
     ],
 
     /*
