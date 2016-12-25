@@ -23,7 +23,7 @@
 		<link rel="stylesheet" href="{{asset('assets/frontend/vendor/font-awesome/css/font-awesome.min.css')}}">
 		<link rel="stylesheet" href="{{asset('assets/frontend/vendor/simple-line-icons/css/simple-line-icons.min.css')}}">
 		<link rel="stylesheet" href="{{asset('assets/frontend/vendor/owl.carousel/assets/owl.carousel.min.css')}}">
-		<link rel="stylesheet" href="{{asset('assets/frontend/vendor/owl.carousel/assets/owl.theme.default.min.min.css')}}">
+		<link rel="stylesheet" href="{{asset('assets/frontend/vendor/owl.carousel/assets/owl.theme.default.min.css')}}">
 		<link rel="stylesheet" href="{{asset('assets/frontend/vendor/magnific-popup/magnific-popup.min.css')}}">
 
         <!-- Theme CSS -->
@@ -34,7 +34,7 @@
         <link rel="stylesheet" href="{{asset('assets/frontend/css/theme-animate.min.css')}}">
 
 		<!-- Skin CSS -->
-		<link rel="stylesheet" href="{{asset('assets/frontend/css/skins/default.css')}}">
+		<link rel="stylesheet" href="{{asset('assets/frontend/css/skins/default.min.css')}}">
 
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="{{asset('assets/frontend/css/custom.min.css')}}">

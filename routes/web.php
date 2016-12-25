@@ -12,17 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('admin.layout');
+    return view('frontend.tampil.right');
 });
 
 //admin
-Route::get('/tampiladmin', 'BladeController@index');
+Route::get('/admin', 'HomeController@index');
 Route::Resource('/admin/post', 'Admin\PostController');
 Route::Resource('/admin/user', 'Admin\UserController');
 
 //frontend
-Route::get('/kiri', 'BladeController@tampil_kiri');
-Route::get('/kanan', 'BladeController@tampil_kanan');
+/*Route::get('/kiri', 'BladeController@tampil_kiri');
+Route::get('/kanan', 'BladeController@tampil_kanan');*/
 
 //controller
 Route::resource('admin/configuration', 'Admin\ConfigurationController');
