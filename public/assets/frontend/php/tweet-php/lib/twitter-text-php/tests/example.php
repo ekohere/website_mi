@@ -15,9 +15,9 @@ error_reporting(E_ALL | E_STRICT | E_DEPRECATED);
 
 $ROOT = dirname(dirname(__FILE__));
 
-require_once $ROOT . '/lib/Twitter/Autolink.php';
-require_once $ROOT . '/lib/Twitter/Extractor.php';
-require_once $ROOT . '/lib/Twitter/HitHighlighter.php';
+require_once $ROOT.'/lib/Twitter/Autolink.php';
+require_once $ROOT.'/lib/Twitter/Extractor.php';
+require_once $ROOT.'/lib/Twitter/HitHighlighter.php';
 
 $browser = (PHP_SAPI != 'cli');
 

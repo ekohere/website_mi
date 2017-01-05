@@ -5,29 +5,29 @@ Version: 		@@version
 */
 
 // COMMON IMPORTS
-@import "config/_imports";
+@import "config/imports";
 
 // BASE
-@import "base/_base";
-@import "base/_header";
-@import "base/_page-header";
+@import "base/base";
+@import "base/header";
+@import "base/page-header";
 
 // HELPERS
-@import "config/_helpers";
+@import "config/helpers";
 
 // GUI
-@import "gui/_parallax";
-@import "gui/_sections";
-@import "gui/_sidebar";
-@import "gui/_sliders";
+@import "gui/parallax";
+@import "gui/sections";
+@import "gui/sidebar";
+@import "gui/sliders";
 
 // PARTIALS
-@import "partials/_home";
-@import "partials/_page-not-found";
+@import "partials/home";
+@import "partials/page-not-found";
 
 // FOOTER
-@import "base/_footer";
+@import "base/footer";
 
 // LAYOUTS
-@import "layouts/_dark";
-@import "layouts/_boxed";
+@import "layouts/dark";
+@import "layouts/boxed";

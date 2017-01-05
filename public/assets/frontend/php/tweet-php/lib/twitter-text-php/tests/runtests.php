@@ -10,7 +10,7 @@
  * @license    http://www.apache.org/licenses/LICENSE-2.0  Apache License v2.0
  */
 
-require_once dirname(__FILE__) . '/bootstrap.php';
+require_once dirname(__FILE__).'/bootstrap.php';
 
 $browser = (PHP_SAPI != 'cli');
 
