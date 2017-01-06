@@ -1,28 +1,28 @@
 {!! Form::hidden('user_id', Auth::id(), ['class' => 'form-control']) !!}
 <div class="form-group {{ $errors->has('title') ? 'has-error' : ''}}">
-    {!! Form::label('title', 'Title', ['class' => 'col-md-4 control-label']) !!}
-    <div class="col-md-6">
+    {!! Form::label('title', 'Title', ['class' => 'col-md-2 control-label']) !!}
+    <div class="col-md-9">
         {!! Form::text('title', null, ['class' => 'form-control']) !!}
         {!! $errors->first('title', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 <div class="form-group {{ $errors->has('category_id') ? 'has-error' : ''}}">
-    {!! Form::label('category_id', 'Category', ['class' => 'col-md-4 control-label']) !!}
-    <div class="col-md-6">
+    {!! Form::label('category_id', 'Category', ['class' => 'col-md-2 control-label']) !!}
+    <div class="col-md-9">
         {!! Form::select('category_id',$category, null, ['class' => 'form-control']) !!}
         {!! $errors->first('category_id',$category, '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 <div class="form-group {{ $errors->has('type_id') ? 'has-error' : ''}}">
-    {!! Form::label('type_id', 'Type', ['class' => 'col-md-4 control-label']) !!}
-    <div class="col-md-6">
+    {!! Form::label('type_id', 'Type', ['class' => 'col-md-2 control-label']) !!}
+    <div class="col-md-9">
         {!! Form::select('type_id',$type, null, ['class' => 'form-control']) !!}
         {!! $errors->first('type_id',$type, '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 <div class="form-group {{ $errors->has('content') ? 'has-error' : ''}}">
-    {!! Form::label('content', 'Content', ['class' => 'col-md-4 control-label']) !!}
-    <div class="col-md-6">
+    {!! Form::label('content', 'Content', ['class' => 'col-md-2 control-label']) !!}
+    <div class="col-md-9">
         {!! Form::textarea('content', null, ['class' => 'form-control']) !!}
         {!! $errors->first('content', '<p class="help-block">:message</p>') !!}
     </div>
@@ -30,7 +30,7 @@
 
 
 <div class="form-group">
-    <div class="col-md-offset-4 col-md-4">
+    <div class="col-md-offset-4 col-md-2">
         {!! Form::submit(isset($submitButtonText) ? $submitButtonText : 'Create', ['class' => 'btn btn-primary']) !!}
     </div>
 </div>

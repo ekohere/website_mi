@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('frontend.tampil.right');
+    return view('frontend.layout');
 });
 
 //admin
