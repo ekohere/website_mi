@@ -190,6 +190,10 @@ return [
 
         //sluggable
         Cviebrock\EloquentSluggable\ServiceProvider::class,
+
+        //laravel filemanager
+        Unisharp\Laravelfilemanager\LaravelFilemanagerServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
     ],
 
     /*
@@ -242,6 +246,8 @@ return [
         //laravel collective
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+
+        'Image' => Intervention\Image\Facades\Image::class,
 
     ],
 
