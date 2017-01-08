@@ -19,6 +19,10 @@ Route::get('/kurikulum', function () {
     return view('frontend.kurikulum');
 });
 
+Route::get('/aboutmi', function () {
+    return view('frontend.aboutmi');
+});
+
 //admin
 Route::get('/admin', 'HomeController@index');
 Route::Resource('/admin/post', 'Admin\PostController');
