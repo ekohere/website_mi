@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('frontend.layout');
 });
 
+Route::get('/kurikulum', function () {
+    return view('frontend.kurikulum');
+});
+
 //admin
 Route::get('/admin', 'HomeController@index');
 Route::Resource('/admin/post', 'Admin\PostController');
