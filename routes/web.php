@@ -23,6 +23,10 @@ Route::get('/aboutmi', function () {
     return view('frontend.aboutmi');
 });
 
+Route::get('/visi_misi', function () {
+    return view('frontend.visi_misi');
+});
+
 //admin
 Route::get('/admin', 'HomeController@index');
 Route::Resource('/admin/post', 'Admin\PostController');
