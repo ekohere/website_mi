@@ -43,7 +43,7 @@
                                         <td>{{ $item->title }}</td><td>{{ $item->content }}</td>
                                         <td>
                                             <a href="{{ url('/admin/post/' . $item->id) }}" class="btn btn-success btn-xs" title="View post"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"/></a>
-                                            <a href="{{ url('/page/' . $item->slug) }}" class="btn btn-warning btn-xs" title="View Page"><span class="glyphicon glyphicon-globe" aria-hidden="true"/></a>
+                                            <a href="{{ url('/page/' . $item->slug) }}" class="btn btn-warning btn-xs" title="View Page" target="_blank"><span class="glyphicon glyphicon-globe" aria-hidden="true"/></a>
                                             <a href="{{ url('/admin/post/' . $item->id . '/edit') }}" class="btn btn-primary btn-xs" title="Edit post"><span class="glyphicon glyphicon-pencil" aria-hidden="true"/></a>
                                             {!! Form::open([
                                                 'method'=>'DELETE',
