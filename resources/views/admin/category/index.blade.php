@@ -1,18 +1,36 @@
 @extends('admin.layout')
 
 @section('content')
-    <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Category</div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Category</h2>
+                    </div>
                     <div class="panel-body">
 
-                        <a href="{{ url('/admin/category/create') }}" class="btn btn-primary btn-xs" title="Add New category"><span class="glyphicon glyphicon-plus" aria-hidden="true"/></a>
-                        <br/>
-                        <br/>
+                        <a href="{{ url('/admin/category/create') }}" class="mb-xs mt-xs mr-xs btn btn-success" title="Add New category"><i class="fa fa-plus"></i> Tambah</a>
+
+                        <form id="form_filter" >
+                                    <div class="row form-inline form-horizontal">
+                                        <div class="col-sm-12 col-md-6">
+                                            <div class="col-md-2">
+                                                {!! Form::select('pagination', ['10'=>'10','25'=>'25','50'=>'50','100'=>'100','semua'=>'semua'], isset($_GET['pagination'])?$_GET['pagination']:25, ["onchange"=>"this.form.submit();",'class' => 'form-control mb-md']) !!}
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="control-label"> data per halaman</label>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <div id="datatable-default_filter" class="dataTables_filter">
+                                                <label><input class="form-control" value="{{isset($_GET['search'])?$_GET['search']:''}}" name="search" placeholder="Search" aria-controls="datatable-default">
+                                                </label></div>
+                                        </div>
+                                    </div>
+                                    </form>
+
                         <div class="table-responsive">
-                            <table class="table table-borderless">
+                            <table class="table table-no-more table-bordered table-striped mb-none">
                                 <thead>
                                     <tr>
                                         <th>ID</th><th> Name </th><th> Information </th><th> Parent Category Id </th><th>Actions</th>
@@ -48,7 +66,5 @@
 
                     </div>
                 </div>
-            </div>
         </div>
-    </div>
 @endsection

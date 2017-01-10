@@ -30,7 +30,8 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        return view('admin.category.create');
+        $listCategory=Category::pluck('id','name');
+        return view('admin.category.create',compact('listCategory'));
     }
 
     /**
@@ -49,7 +50,7 @@ class CategoryController extends Controller
 
         Session::flash('flash_message', 'Category added!');
 
-        return redirect('adminController/category');
+        return redirect('admin/category');
     }
 
     /**
@@ -75,9 +76,10 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
+        $listCategory=Category::pluck('id','name');
         $category = Category::findOrFail($id);
 
-        return view('admin.category.edit', compact('category'));
+        return view('admin.category.edit', compact('category','listCategory'));
     }
 
     /**
@@ -98,7 +100,7 @@ class CategoryController extends Controller
 
         Session::flash('flash_message', 'Category updated!');
 
-        return redirect('adminController/category');
+        return redirect('admin/category');
     }
 
     /**
@@ -114,6 +116,6 @@ class CategoryController extends Controller
 
         Session::flash('flash_message', 'Category deleted!');
 
-        return redirect('adminController/category');
+        return redirect('admin/category');
     }
 }

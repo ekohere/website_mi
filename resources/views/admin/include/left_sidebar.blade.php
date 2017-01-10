@@ -15,7 +15,7 @@
 			<nav id="menu" class="nav-main" role="navigation">
 				<ul class="nav nav-main">
 					<li class="nav-active">
-						<a href="index.html">
+						<a href="{{url('admin')}}">
 							<i class="fa fa-home" aria-hidden="true"></i>
 							<span>Dashboard</span>
 						</a>
@@ -23,7 +23,7 @@
 					<li class="nav-parent">
 						<a>
 							<i class="fa fa-columns" aria-hidden="true"></i>
-							<span>Layouts</span>
+							<span>Master Data</span>
 						</a>
 						<ul class="nav nav-children">
 							<li>
@@ -53,7 +53,7 @@
 							</li>
 						</ul>
 					</li>
-					<li class="nav-parent">
+					{{--<li class="nav-parent">
 						<a>
 							<i class="fa fa-copy" aria-hidden="true"></i>
 							<span>Pages</span>
@@ -472,11 +472,11 @@
 								</ul>
 							</li>
 						</ul>
-					</li>
+					</li>--}}
 				</ul>
 			</nav>
 
-			<hr class="separator" />
+			{{--<hr class="separator" />
 
 			<div class="sidebar-widget widget-tasks">
 				<div class="widget-header">
@@ -530,7 +530,7 @@
 						</li>
 					</ul>
 				</div>
-			</div>
+			</div>--}}
 		</div>
 
 		<script>

@@ -27,29 +27,25 @@ Route::get('/visi_misi', function () {
     return view('frontend.visi_misi');
 });
 
+Route::group(['prefix' => 'admin','middleware' => 'auth'], function () {
 //admin
-Route::get('/admin', 'HomeController@index');
-Route::Resource('/admin/post', 'Admin\PostController');
-Route::Resource('/admin/user', 'Admin\UserController');
-
-//frontend
-/*Route::get('/kiri', 'BladeController@tampil_kiri');
-Route::get('/kanan', 'BladeController@tampil_kanan');*/
+    Route::get('/', 'HomeController@index');
+    Route::Resource('/post', 'Admin\PostController');
+    Route::Resource('/user', 'Admin\UserController');
 
 //controller
-Route::resource('admin/configuration', 'Admin\ConfigurationController');
-Route::resource('admin/type', 'Admin\TypeController');
+    Route::resource('/configuration', 'Admin\ConfigurationController');
+    Route::resource('/type', 'Admin\TypeController');
 //admin.category
-Route::resource('admin/category','CategoryController');
+    Route::resource('/category','CategoryController');
 //admin.comment
-Route::resource('admin/comment', 'CommentController');
+    Route::resource('/comment', 'CommentController');
 
 //admin.role
-Route::resource('admin/role', 'RoleController');
+    Route::resource('/role', 'RoleController');
 //admin.permission
-Route::resource('admin/permission', 'PermissionController');
-
-
+    Route::resource('/permission', 'PermissionController');
+});
 
 
 Auth::routes();

@@ -8,14 +8,14 @@
 <div class="form-group {{ $errors->has('information') ? 'has-error' : ''}}">
     {!! Form::label('information', 'Information', ['class' => 'col-md-4 control-label']) !!}
     <div class="col-md-6">
-        {!! Form::text('information', null, ['class' => 'form-control']) !!}
+        {!! Form::textarea('information', null, ['class' => 'form-control']) !!}
         {!! $errors->first('information', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 <div class="form-group {{ $errors->has('parent_category_id') ? 'has-error' : ''}}">
     {!! Form::label('parent_category_id', 'Parent Category Id', ['class' => 'col-md-4 control-label']) !!}
     <div class="col-md-6">
-        {!! Form::text('parent_category_id', Auth::id(), ['class' => 'form-control']) !!}
+        {!! Form::select('parent_category_id', $listCategory, null, ['placeholder'=>'','class' => 'form-control']) !!}
         {!! $errors->first('parent_category_id', '<p class="help-block">:message</p>') !!}
     </div>
 </div>

@@ -33,7 +33,7 @@
                             <table class="table table-no-more table-bordered table-striped mb-none">
                                 <thead>
                                     <tr>
-                                        <th>ID</th><th> Title </th><th> Content </th>
+                                        <th>ID</th><th> Title </th><th> Content </th><th> Actions </th>
                                     </tr>
                                 </thead>
                                 <tbody>
