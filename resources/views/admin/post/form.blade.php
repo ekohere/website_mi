@@ -35,7 +35,7 @@
     </div>
 </div>
 
-<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+<script src="{{asset('/vendor/unisharp/laravel-ckeditor/ckeditor.js')}}"></script>
 <script>
     CKEDITOR.replace( 'content', {
         filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
