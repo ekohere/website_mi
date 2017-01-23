@@ -32,7 +32,7 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function () {
     Route::get('/', 'HomeController@index');
     Route::Resource('/post', 'Admin\PostController');
     Route::Resource('/user', 'Admin\UserController');
-
+  Route::Resource('/berita', 'Admin\BeritaController');
 //controller
     Route::resource('/configuration', 'Admin\ConfigurationController');
     Route::resource('/type', 'Admin\TypeController');
