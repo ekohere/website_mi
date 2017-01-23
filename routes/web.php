@@ -33,6 +33,7 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function () {
     Route::Resource('/post', 'Admin\PostController');
 
     Route::Resource('/article', 'Admin\ArticleController');
+      Route::Resource('/pengumuman', 'Admin\PengumumanController');
     Route::Resource('/user', 'Admin\UserController');
   Route::Resource('/berita', 'Admin\BeritaController');
 //controller
