@@ -31,6 +31,8 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function () {
 //admin
     Route::get('/', 'HomeController@index');
     Route::Resource('/post', 'Admin\PostController');
+
+    Route::Resource('/article', 'Admin\ArticleController');
     Route::Resource('/user', 'Admin\UserController');
 
 //controller
