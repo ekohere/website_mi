@@ -322,7 +322,7 @@
                                                         <li><a href="shop-product-full-width.html">Shop - Product Full Width</a></li>
                                                         <li><a href="shop-product-sidebar.html">Shop - Product Sidebar</a></li>
                                                         <li><a href="shop-cart.html">Shop - Cart</a></li>
-                                                        <li><a href="shop-login.html">Shop - Login</a></li>
+                                                        <li><a href="">Shop - Login</a></li>
                                                         <li><a href="shop-checkout.html">Shop - Checkout</a></li>
                                                     </ul>
                                                 </li>
@@ -362,7 +362,7 @@
                                                 <li><a href="page-careers.html">Careers</a></li>
                                                 <li><a href="page-our-office.html">Our Office</a></li>
                                                 <li><a href="page-faq.html">FAQ</a></li>
-                                                <li><a href="page-login.html">Login / Register</a></li>
+                                                <li><a href="/login">Login / Register</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown">
