@@ -1,26 +1,31 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Category;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use App\Category;
+use App\Post;
+use App\Type;
 use Illuminate\Http\Request;
 use Session;
 
-class CategoryController extends Controller
+class BeritaController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\View\View
      */
-    public function index()
+    public function index(Request $request)
     {
-        $category = Category::paginate(25);
+        $berita = Post::where('title', 'LIKE', '%'.(isset($request->search)?$request->search:'').'%')
+            ->orwhere('content', 'LIKE', '%'.(isset($request->search)?$request->search:'').'%')
+            ->paginate(isset($request->pagination)?$request->pagination:($request->pagination));
 
-        return view('admin.category.index', compact('category'));
+
+        return view('admin.berita.index', compact('berita'));
     }
 
     /**
@@ -28,10 +33,12 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\View\View
      */
-    public function create()
+    public function create(Request $request)
     {
-        $listCategory=Category::pluck('name','id');
-        return view('admin.category.create',compact('listCategory'));
+        $category = Category::pluck('name','id');
+        $type = Type::where('name','berita')->pluck('name','id');
+
+        return view('admin.berita.create',compact('category','type'));
     }
 
     /**
@@ -46,11 +53,11 @@ class CategoryController extends Controller
         
         $requestData = $request->all();
         
-        Category::create($requestData);
+        Post::create($requestData);
 
-        Session::flash('flash_message', 'Category added!');
+        Session::flash('flash_message', 'Post added!');
 
-        return redirect('admin/category');
+        return redirect('admin/berita');
     }
 
     /**
@@ -62,9 +69,9 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-        $category = Category::findOrFail($id);
+        $berita = Post::findOrFail($id);
 
-        return view('admin.category.show', compact('category'));
+        return view('admin.berita.show', compact('berita'));
     }
 
     /**
@@ -76,10 +83,11 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        $listCategory=Category::pluck('id','name');
-        $category = Category::findOrFail($id);
+        $berita = Post::findOrFail($id);
+        $category = Category::pluck('name','id');
+        $type = Type::pluck('name','id');
 
-        return view('admin.category.edit', compact('category','listCategory'));
+        return view('admin.berita.edit', compact('berita','category','type'));
     }
 
     /**
@@ -95,12 +103,12 @@ class CategoryController extends Controller
         
         $requestData = $request->all();
         
-        $category = Category::findOrFail($id);
-        $category->update($requestData);
+        $berita = Post::findOrFail($id);
+        $berita->update($requestData);
 
-        Session::flash('flash_message', 'Category updated!');
+        Session::flash('flash_message', 'Post updated!');
 
-        return redirect('admin/category');
+        return redirect('admin/berita');
     }
 
     /**
@@ -112,10 +120,10 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        Category::destroy($id);
+        Post::destroy($id);
 
-        Session::flash('flash_message', 'Category deleted!');
+        Session::flash('flash_message', 'Post deleted!');
 
-        return redirect('admin/category');
+        return redirect('admin/berita');
     }
 }
