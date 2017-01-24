@@ -27,6 +27,10 @@ Route::get('/visi_misi', function () {
     return view('frontend.visi_misi');
 });
 
+Route::get('/tampilhome', function () {
+    return view('frontend.home');
+});
+
 Route::group(['prefix' => 'admin','middleware' => 'auth'], function () {
 //admin
     Route::get('/', 'HomeController@index');
