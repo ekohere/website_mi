@@ -5,7 +5,7 @@
                 <div class="header-column">
                     <div class="header-logo">
                         <a href="index.html">
-                            <img alt="Porto" width="111" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="33" src="{{asset('assets/frontend/img/logo.png')}}">
+                            <img alt="Porto" width="100" height="100" data-sticky-width="70" data-sticky-height="70" data-sticky-top="33" src="{{asset('assets/frontend/img/logo.jpg')}}">
                         </a>
                     </div>
                 </div>
