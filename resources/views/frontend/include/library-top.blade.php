@@ -34,10 +34,10 @@
 <link rel="stylesheet" href="{{asset('assets/frontend/css/theme-animate.min.css')}}">
 
 <!-- Current Page CSS -->
-		<link rel="stylesheet" href="{{asset('assets/frontend/vendor/rs-plugin/css/settings.css')}}" media="screen">
-		<link rel="stylesheet" href="{{asset('assets/frontend/vendor/rs-plugin/css/layers.css')}}" media="screen">
-		<link rel="stylesheet" href="{{asset('assets/frontend/vendor/rs-plugin/css/navigation.css')}}" media="screen">
-		<link rel="stylesheet" href="{{asset('assets/frontend/vendor/circle-flip-slideshow/css/component.css')}}" media="screen">
+		<link rel="stylesheet" href="{{asset('assets/frontend/vendor/rs-plugin/css/settings.min.css')}}" media="screen">
+		<link rel="stylesheet" href="{{asset('assets/frontend/vendor/rs-plugin/css/layers.min.css')}}" media="screen">
+		<link rel="stylesheet" href="{{asset('assets/frontend/vendor/rs-plugin/css/navigation.min.css')}}" media="screen">
+		<link rel="stylesheet" href="{{asset('assets/frontend/vendor/circle-flip-slideshow/css/component.min.css')}}" media="screen">
 
 <!-- Skin CSS -->
 <link rel="stylesheet" href="{{asset('assets/frontend/css/skins/default.min.css')}}">
