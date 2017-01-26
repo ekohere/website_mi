@@ -31,6 +31,8 @@ Route::get('/tampilhome', function () {
     return view('frontend.home');
 });
 
+
+
 Route::group(['prefix' => 'admin','middleware' => 'auth'], function () {
 //admin
     Route::get('/', 'HomeController@index');
@@ -48,6 +50,9 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function () {
 //admin.comment
     Route::resource('/comment', 'CommentController');
 
+//admin.gallery
+Route::resource('/gallery','GalleryController');
+
 //admin.role
     Route::resource('/role', 'RoleController');
 //admin.permission
@@ -61,3 +66,12 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/page/{slug}', 'PageController@index');
 
+
+
+
+
+
+//Upload Gambar untuk Gallery
+Route::group(['middleware' => ['web']], function () {
+    Route::resource('images', 'ImageController');
+});
