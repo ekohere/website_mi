@@ -51,6 +51,21 @@
 									Category
 								</a>
 							</li>
+							<li>
+								<a href="{{url('/admin/article')}}">
+									Article
+								</a>
+							</li>
+							<li>
+								<a href="{{url('/admin/pengumuman')}}">
+									Announcement
+								</a>
+							</li>
+							<li>
+								<a href="{{url('/admin/berita')}}">
+									News
+								</a>
+							</li>
 						</ul>
 					</li>
 					{{--<li class="nav-parent">
