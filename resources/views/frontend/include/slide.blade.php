@@ -58,8 +58,8 @@
 				
 								
 								<div class="tp-caption main-label"
-									data-x="685"
-									data-y="190"
+									data-x="600"
+									data-y="320"
 									data-start="1800"
 									data-whitespace="nowrap"						 
 									data-transform_in="y:[100%];s:500;"
@@ -67,8 +67,8 @@
 									data-mask_in="x:0px;y:0px;">Join With Us!</div>
 				
 								<div class="tp-caption bottom-label"
-									data-x="685"
-									data-y="300"
+									data-x="600"
+									data-y="400"
 									data-start="2000"
 									data-transform_idle="o:1;"
 									data-transform_in="y:[100%];z:0;rZ:-35deg;sX:1;sY:1;skX:0;skY:0;s:600;e:Power4.easeInOut;"
@@ -78,7 +78,7 @@
 									data-whitespace="nowrap"
 									data-splitout="none" 
 									data-responsive_offset="on" 
-									data-elementdelay="0.05">Create slides with brushes and fonts</div>
+									data-elementdelay="0.05">Himpunan Mahasiswa Manajemen Informatika</div>
 				
 							</li> 
 						</ul>
