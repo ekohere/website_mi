@@ -70,3 +70,8 @@ Route::get('/page/{slug}', 'PageController@index');
 Route::group(['middleware' => ['web']], function () {
     Route::resource('images', 'ImageController');
 });
+
+//Show Gambar di Blade
+Route::group(['middleware' => ['web']], function () {
+    Route::resource('gallery', 'ImageShowController');
+});
