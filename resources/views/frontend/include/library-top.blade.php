@@ -2,14 +2,14 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Right Sidebar | Porto - Responsive HTML5 Template 4.3.1</title>
+<title>Program Studi Manajemen Informatika</title>
 
 <meta name="keywords" content="HTML5 Template" />
 <meta name="description" content="Porto - Responsive HTML5 Template">
 <meta name="author" content="okler.net">
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="{{asset('assets/frontend/img/favicon.ico')}}" type="image/x-icon" />
+<link rel="shortcut icon" href="{{asset('assets/frontend/img/icon.png')}}" type="image/x-icon" />
 <link rel="apple-touch-icon" href="{{asset('assets/frontend/img/apple-touch-icon.png')}}">
 
 <!-- Mobile Metas -->
@@ -32,6 +32,12 @@
 <link rel="stylesheet" href="{{asset('assets/frontend/css/theme-blog.min.css')}}">
 <link rel="stylesheet" href="{{asset('assets/frontend/css/theme-shop.min.css')}}">
 <link rel="stylesheet" href="{{asset('assets/frontend/css/theme-animate.min.css')}}">
+
+<!-- Current Page CSS -->
+		<link rel="stylesheet" href="{{asset('assets/frontend/vendor/rs-plugin/css/settings.min.css')}}" media="screen">
+		<link rel="stylesheet" href="{{asset('assets/frontend/vendor/rs-plugin/css/layers.min.css')}}" media="screen">
+		<link rel="stylesheet" href="{{asset('assets/frontend/vendor/rs-plugin/css/navigation.min.css')}}" media="screen">
+		<link rel="stylesheet" href="{{asset('assets/frontend/vendor/circle-flip-slideshow/css/component.min.css')}}" media="screen">
 
 <!-- Skin CSS -->
 <link rel="stylesheet" href="{{asset('assets/frontend/css/skins/default.min.css')}}">

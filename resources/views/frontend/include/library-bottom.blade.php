@@ -18,6 +18,12 @@
 <!-- Theme Base, Components and Settings -->
 <script src="{{asset('assets/frontend/js/theme.min.js')}}"></script>
 
+<!-- Current Page Vendor and Views -->
+<script src="{{asset('assets/frontend/vendor/rs-plugin/js/jquery.themepunch.tools.min.js')}}"></script>
+<script src="{{asset('assets/frontend/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js')}}"></script>
+<script src="{{asset('assets/frontend/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js')}}"></script>
+<script src="{{asset('assets/frontend/js/views/view.home.min.js')}}"></script>
+
 <!-- Theme Custom -->
 <script src="{{asset('assets/frontend/js/custom.min.js')}}"></script>
 

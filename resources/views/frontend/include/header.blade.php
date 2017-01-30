@@ -5,7 +5,7 @@
                 <div class="header-column">
                     <div class="header-logo">
                         <a href="index.html">
-                            <img alt="Porto" width="111" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="33" src="{{asset('assets/frontend/img/logo.png')}}">
+                            <img alt="Porto" width="100" height="100" data-sticky-width="70" data-sticky-height="70" data-sticky-top="33" src="{{asset('assets/frontend/img/logo.jpg')}}">
                         </a>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                                                                     <li><a href="shortcodes-buttons.html">Buttons</a></li>
                                                                     <li><a href="shortcodes-labels.html">Labels</a></li>
                                                                     <li><a href="shortcodes-lists.html">Lists</a></li>
-                                                                    <li><a href="shortcodes-image-gallery.html">Image Gallery</a></li>
+                                                                    <li><a href="/gallery">Image Gallery</a></li>
                                                                     <li><a href="shortcodes-image-frames.html">Image Frames</a></li>
                                                                     <li><a href="shortcodes-testimonials.html">Testimonials</a></li>
                                                                     <li><a href="shortcodes-blockquotes.html">Blockquotes</a></li>

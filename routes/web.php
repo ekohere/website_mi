@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/layout', function () {
     return view('frontend.layout');
 });
 
@@ -27,9 +27,11 @@ Route::get('/visi_misi', function () {
     return view('frontend.visi_misi');
 });
 
-Route::get('/tampilhome', function () {
+Route::get('/', function () {
     return view('frontend.home');
 });
+
+
 
 Route::group(['prefix' => 'admin','middleware' => 'auth'], function () {
 //admin
@@ -48,6 +50,7 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function () {
 //admin.comment
     Route::resource('/comment', 'CommentController');
 
+
 //admin.role
     Route::resource('/role', 'RoleController');
 //admin.permission
@@ -61,3 +64,14 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/page/{slug}', 'PageController@index');
 
+
+
+//Upload Gambar untuk Gallery
+Route::group(['middleware' => ['web']], function () {
+    Route::resource('images', 'ImageController');
+});
+
+//Show Gambar di Blade
+Route::group(['middleware' => ['web']], function () {
+    Route::resource('gallery', 'ImageShowController');
+});
