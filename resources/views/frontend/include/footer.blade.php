@@ -35,9 +35,9 @@
                 <div class="contact-details">
                     <h4>Contact Us</h4>
                     <ul class="contact">
-                        <li><p><i class="fa fa-map-marker"></i> <strong>Alamat:</strong>Jl. Samratulangi Samarinda, Samarinda, Kalimantan Timur</p></li>
-                        <li><p><i class="fa fa-phone"></i> <strong>Telepon:</strong> (0541) 260-421, 260-680</p></li>
-                        <li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:mail@example.com">mi.politanisamarinda@gmail.com</a></p></li>
+                        <li><p><i class="fa fa-map-marker"></i> <strong>Address:</strong> 1234 Street Name, City Name, United States</p></li>
+                        <li><p><i class="fa fa-phone"></i> <strong>Phone:</strong> (123) 456-789</p></li>
+                        <li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:mail@example.com">mail@example.com</a></p></li>
                     </ul>
                 </div>
             </div>
@@ -60,14 +60,14 @@
                     </a>
                 </div>
                 <div class="col-md-7">
-                    <p>© Copyright 2017. All Rights Reserved.</p>
+                    <p>© Copyright 2015. All Rights Reserved.</p>
                 </div>
                 <div class="col-md-4">
                     <nav id="sub-menu">
                         <ul>
-                            <li><a href="page-faq.html">FAQ's -  0541 260680</a></li>
-                            <li><a href="https://www.google.co.id/maps/place/Politeknik+Pertanian+Negeri+Samarinda/@-0.5360786,117.1213583,17z/data=!3m1!4b1!4m5!3m4!1s0x2df68080334dac99:0x5327a22a4028b267!8m2!3d-0.5360786!4d117.123547?hl=id">Sitemap</a></li>
-                            <li><a href="http://politanisamarinda.ac.id/">politani samarinda</a></li>
+                            <li><a href="page-faq.html">FAQ's</a></li>
+                            <li><a href="sitemap.html">Sitemap</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
