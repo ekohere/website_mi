@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/layout', function () {
     return view('frontend.layout');
 });
 
@@ -27,7 +27,7 @@ Route::get('/visi_misi', function () {
     return view('frontend.visi_misi');
 });
 
-Route::get('/tampilhome', function () {
+Route::get('/', function () {
     return view('frontend.home');
 });
 
@@ -69,4 +69,9 @@ Route::get('/page/{slug}', 'PageController@index');
 //Upload Gambar untuk Gallery
 Route::group(['middleware' => ['web']], function () {
     Route::resource('images', 'ImageController');
+});
+
+//Show Gambar di Blade
+Route::group(['middleware' => ['web']], function () {
+    Route::resource('gallery', 'ImageShowController');
 });

@@ -38,6 +38,11 @@ class User extends Authenticatable
         return $this->hasMany('App\Comment');
     }
 
+    public function gallery(){
+
+        return $this->hasMany('App\Gallery');
+    }
+
     public function profile(){
 
         return $this->belongsTo('App\Profile');

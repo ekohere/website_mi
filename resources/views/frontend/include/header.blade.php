@@ -128,7 +128,7 @@
                                                                     <li><a href="shortcodes-buttons.html">Buttons</a></li>
                                                                     <li><a href="shortcodes-labels.html">Labels</a></li>
                                                                     <li><a href="shortcodes-lists.html">Lists</a></li>
-                                                                    <li><a href="shortcodes-image-gallery.html">Image Gallery</a></li>
+                                                                    <li><a href="/gallery">Image Gallery</a></li>
                                                                     <li><a href="shortcodes-image-frames.html">Image Frames</a></li>
                                                                     <li><a href="shortcodes-testimonials.html">Testimonials</a></li>
                                                                     <li><a href="shortcodes-blockquotes.html">Blockquotes</a></li>
